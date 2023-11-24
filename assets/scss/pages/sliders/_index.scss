@@ -1,0 +1,52 @@
+.sliders {
+  &__item {
+    &--thumbnail {
+      padding-top: calc(100vh - 200px);
+
+      img {
+        animation: zoom 10s infinite;
+        animation-direction: alternate-reverse;
+      }
+    }
+  }
+
+  &::after {
+    background: radial-gradient(
+      circle at center,
+      transparent,
+      rgba(0, 0, 0, 0.325)
+    );
+  }
+
+  &::before {
+    background: url('~/static/atter_sliders.svg') no-repeat;
+    background-position: bottom center;
+  }
+
+  &__content {
+    &--title {
+      text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.6);
+    }
+
+    &--icon {
+      animation: zoom 0.4s infinite;
+      animation-direction: alternate-reverse;
+    }
+  }
+
+  .ant-carousel {
+    .slick-dots {
+      bottom: 100px;
+      z-index: 999;
+
+      li {
+        button {
+          width: 15px;
+          height: 15px;
+          border-radius: 100%;
+          background-color: #f88b8b;
+        }
+      }
+    }
+  }
+}

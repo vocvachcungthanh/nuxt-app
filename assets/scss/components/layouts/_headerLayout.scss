@@ -1,0 +1,9 @@
+.header {
+  &__logo {
+    &--nickname {
+      &::after {
+        width: calc(100% + 80px);
+      }
+    }
+  }
+}
