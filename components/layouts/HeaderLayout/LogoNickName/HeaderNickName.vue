@@ -12,7 +12,7 @@ import { mapGetters } from 'vuex'
 export default {
   computed: {
     ...mapGetters({
-      getNickName: 'logo/getLogo',
+      getNickName: 'GET_LOGO',
     }),
   },
 }

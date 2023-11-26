@@ -22,7 +22,7 @@ export default {
 
   computed: {
     ...mapGetters({
-      getLogo: 'logo/getLogo',
+      getLogo: 'GET_LOGO',
     }),
   },
 }

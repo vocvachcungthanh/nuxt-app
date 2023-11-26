@@ -1,0 +1,19 @@
+.count-down {
+  &__content {
+    .countdown {
+      &__block {
+        animation: count-heart 3s infinite;
+        animation-direction: alternate-reverse;
+
+        &::before {
+          background: url('~/assets/images/love.png') no-repeat;
+          background-position: center;
+          background-size: contain;
+
+          width: calc(100% + 80px);
+          height: calc(100% + 80px);
+        }
+      }
+    }
+  }
+}

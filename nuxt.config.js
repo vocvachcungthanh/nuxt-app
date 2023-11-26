@@ -72,4 +72,22 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  env: {
+    baseURL: process.env.BASE_URL || 'https://huuthanh-thuytien.click',
+    baseApiUrl:
+      process.env.BASE_API_URL ||
+      'https://huuthanh-thuytien.click/wedding-api/api/',
+    baseGoogleUc:
+      process.env.BASE_GOOGLE_UC || 'https://drive.google.com/uc?id=',
+  },
+
+  router: {
+    middleware: 'mobile',
+  },
+
+  server: {
+    hots: '192.168.0.100',
+    port: process.env.PORT || 3002,
+  },
 }

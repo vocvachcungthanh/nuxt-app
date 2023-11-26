@@ -7,3 +7,19 @@
     transform: scale(1.2);
   }
 }
+
+@keyframes shine {
+  to {
+    background-position: right -40px top 0;
+  }
+}
+
+@keyframes count-heart {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
